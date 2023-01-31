@@ -10,29 +10,31 @@
 </head>
 
 <body>
-    <nav>
-        <!-- TODO: make horizontal list-->
-        <div class="container nav-menu">
-            <p>Add Task</p>
-            <p>Task list</p>
-            <p>About</p>
-        </div>
-    </nav>
-    <header class="container">
-        <h1>Welcome to To Do Now!</h1>
-    </header>
-    <section id=" tasks" class="container">
-        <div id="newtask ">
-            <input placeholder="Add a new task " />
-            <button id="addtask " type="button ">Add Task</button>
-            <!--TODO:create link to tasklist and only show for a bit on new task creation -->
-            <p>See new tasks</p>
-        </div>
-    </section>
+    <div class="wrapper">
+        <nav>
+            <!-- TODO: make horizontal list-->
+            <div class="container nav-menu">
+                <p>Add Task</p>
+                <p>Task list</p>
+                <p>About</p>
+            </div>
+        </nav>
+        <header class="container">
+            <h1>Welcome to To Do Now!</h1>
+        </header>
+        <section id="addtasksection" class="container">
+            <div id="newtask " class="newtask">
+                <input placeholder="Add a new task " />
+                <button id="addtask " type="button ">Add Task</button>
+                <!--TODO:create link to tasklist and only show for a bit on new task creation -->
+                <p>See new tasks</p>
+            </div>
+        </section>
 
-    <footer>
-        <p>2023 To Do Now</p>
-    </footer>
+        <footer>
+            <p>2023 To Do Now</p>
+        </footer>
+    </div>
 </body>
 
 </html>
