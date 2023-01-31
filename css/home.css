@@ -1,0 +1,38 @@
+.wrapper {
+    width: 95%;
+    margin: auto
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 10rem;
+    padding-top: 1rem;
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+.nav-menu {
+    gap: 10px;
+}
+
+.infotext {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
