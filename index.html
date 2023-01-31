@@ -5,22 +5,26 @@
     <meta charset="”utf-8″" />
     <title>To Do Now - a simple to do app</title>
     <!-- TODO: add favicon and metadata-->
+
+    <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
     <nav>
         <!-- TODO: make horizontal list-->
-        <p>Add Task</p>
-        <p>Task list</p>
-        <p>About</p>
+        <div class="container nav-menu">
+            <p>Add Task</p>
+            <p>Task list</p>
+            <p>About</p>
+        </div>
     </nav>
-    <header>
+    <header class="container">
         <h1>Welcome to To Do Now!</h1>
     </header>
-    <section id="tasks">
-        <div id="newtask">
-            <input placeholder="Add a new task" />
-            <button id="addtask" type="button">Add Task</button>
+    <section id=" tasks" class="container">
+        <div id="newtask ">
+            <input placeholder="Add a new task " />
+            <button id="addtask " type="button ">Add Task</button>
             <!--TODO:create link to tasklist and only show for a bit on new task creation -->
             <p>See new tasks</p>
         </div>
