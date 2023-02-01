@@ -26,7 +26,6 @@ window.onload = () => {
 
         //handle delete
         if (e.target.id.includes("delete-index")) {
-            console.log(e.target)
             tasks.find((element, index, array) => {
                 if (index == e.target.parentElement.parentElement.rowIndex - 1) {
                     localStorage.removeItem(array[index].id)
