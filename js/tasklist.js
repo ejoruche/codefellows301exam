@@ -46,7 +46,7 @@ window.onload = () => {
             }
         } else if (e.target.id.includes("check-index")) { //handle checked vs not checked
             let task = tasks.find((element, index, array) => {
-                if (index == e.target.id.substring(13)) {
+                if (index == e.target.id.substring(12)) {
                     array[index].isCompleted = !array[index].isCompleted
                     localStorage.setItem(array[index].id, JSON.stringify(array[index]))
                 }
