@@ -1,5 +1,5 @@
 function Task(taskDesc) {
-    this.id = localStorage.length + 1;
+    this.id = `task${localStorage.length + 1}`;
     this.taskDesc = taskDesc;
     this.createDate = Date.now();
     this.isCompleted = false;
