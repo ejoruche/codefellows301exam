@@ -31,27 +31,28 @@
             <h1>You have 4 tasks</h1>
             <!--TODO: get this from localstorage properly-->
         </header>
-        <section id="tasks" class="container">
-            <div id="tasklist" class="container">
-                <table id="tasks" class="container">
-                    <tr>
-                        <th><input type="checkbox"></th>
-                        <th>Task</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Eat more candy</td>
-                        <td>Delete</td>
-                    </tr>
-                </table>
+        <section id="taskssection">
+
+            <table id="tasks">
+                <tr>
+                    <th><input type="checkbox" id="" checkboxHeader/>
+                        <label for="checkboxHeader"></label></th>
+                    <th>Task</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Eat more candy</td>
+                    <td><small>Delete</small></td>
+                </tr>
+            </table>
 
         </section>
 
         <footer>
-            <p>2023 To Do Now</p>
+            <small>2023 To Do Now</small>
         </footer>
-        </div>
+    </div>
 </body>
 
 </html>
