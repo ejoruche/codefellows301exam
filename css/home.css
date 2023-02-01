@@ -31,8 +31,9 @@ footer {
     gap: 10px;
 }
 
-.infotext {
+#infotext {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
+    visibility: hidden;
 }
