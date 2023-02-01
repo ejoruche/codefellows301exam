@@ -45,6 +45,7 @@ input[type="checkbox"] {
 .tablelink {
     color: #667085;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .tablelink:hover {

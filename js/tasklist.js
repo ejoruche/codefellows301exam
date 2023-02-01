@@ -26,13 +26,16 @@ window.onload = () => {
 
         //handle delete
         if (e.target.id.includes("delete-index")) {
+            console.log(e.target)
             tasks.find((element, index, array) => {
-                if (index == e.target.id.substring(13)) {
+                if (index == e.target.parentElement.parentElement.rowIndex - 1) {
                     localStorage.removeItem(array[index].id)
                     tasks.splice(index, 1)
                 }
             })
-            table.deleteRow(e.target.id.substring(13) + 1)
+
+            table.deleteRow(e.target.parentElement.parentElement.rowIndex)
+
 
             if (tasks.length === 0) {
                 taskListHeader.textContent = "You have no tasks"
@@ -46,7 +49,7 @@ window.onload = () => {
             }
         } else if (e.target.id.includes("check-index")) { //handle checked vs not checked
             let task = tasks.find((element, index, array) => {
-                if (index == e.target.id.substring(12)) {
+                if (index == e.target.parentElement.parentElement.rowIndex - 1) {
                     array[index].isCompleted = !array[index].isCompleted
                     localStorage.setItem(array[index].id, JSON.stringify(array[index]))
                 }
