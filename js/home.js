@@ -1,14 +1,14 @@
 function Task(taskDesc) {
-    this.id = `task${localStorage.length + 1}`;
+    this.id = `task ${localStorage.length + 1}`;
     this.taskDesc = taskDesc;
-    this.createDate = Date.now();
+    this.dateCreated = Date.now();
     this.isCompleted = false;
 }
 
 function handleAddTask() {
     const inputValue = document.getElementById('taskinput').value;
     let createdTask = new Task(inputValue)
-    localStorage.setItem(createdTask.id, createdTask);
+    localStorage.setItem(createdTask.id, JSON.stringify(createdTask));
 
     displayInfoText(`'${inputValue}' was added successfully`);
     document.getElementById('taskinput').value = '';
@@ -32,6 +32,7 @@ window.onload = () => {
             addTaskButton.disabled = true;
         } else addTaskButton.disabled = false;
     })
+
     addTaskInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             event.preventDefault(); //canceling default behavior 

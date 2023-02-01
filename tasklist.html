@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/tasklist.css" />
-    <script src="js/home.js"></script>
+    <script src="js/tasklist.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             </div>
         </nav>
         <header class="container">
-            <h1>You have 4 tasks</h1>
+            <h1 id="tasklistheader"></h1>
             <!--TODO: get this from localstorage properly-->
         </header>
         <section id="taskssection">
@@ -37,14 +37,13 @@
                 <tr>
                     <th><input type="checkbox" id="" checkboxHeader/>
                         <label for="checkboxHeader"></label></th>
-                    <th>Task</th>
+                    <th>Task
+                    </th>
+                    <th>Date created
+                    </th>
                     <th></th>
                 </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>Eat more candy</td>
-                    <td><small>Delete</small></td>
-                </tr>
+
             </table>
 
         </section>
