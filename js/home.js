@@ -32,5 +32,13 @@ window.onload = () => {
             addTaskButton.disabled = true;
         } else addTaskButton.disabled = false;
     })
+    addTaskInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); //canceling default behavior 
+            handleAddTask()
+        }
+    });
+
     addTaskButton.addEventListener('click', handleAddTask);
+
 };
