@@ -1,4 +1,5 @@
 function Task(taskDesc) {
+    this.id = localStorage.length + 1;
     this.taskDesc = taskDesc;
     this.createDate = Date.now();
     this.isCompleted = false;
@@ -6,7 +7,8 @@ function Task(taskDesc) {
 
 function handleAddTask() {
     const inputValue = document.getElementById('taskinput').value;
-    localStorage.setItem(new Task(inputValue));
+    let createdTask = new Task(inputValue)
+    localStorage.setItem(createdTask.id, createdTask);
 
     displayInfoText(`'${inputValue}' was added successfully`);
     document.getElementById('taskinput').value = '';
